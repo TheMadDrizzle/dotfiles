@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # dotfiles
 Initialization of repo for config files.
 
