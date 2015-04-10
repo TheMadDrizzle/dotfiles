@@ -14,7 +14,8 @@ call vundle#end()
 filetype plugin indent on
 
 " VIM CONFIGURE
-autocmd vimenter * NERDTree
+autocmd StdinReadPre * let s:std_in=1
+audocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
