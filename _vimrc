@@ -1,4 +1,5 @@
 set nocompatible
+set backspace=2
 filetype off
 
 set rtp+=$HOME/vimfiles/bundle/Vundle.vim
@@ -15,7 +16,10 @@ filetype plugin indent on
 
 " VIM CONFIGURE
 autocmd StdinReadPre * let s:std_in=1
-audocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+set colorcolumn=110
+highlight ColorColumn ctermbg=red
+noremap <F5> :w<CR> make<CR> :!echo"-------RUNNING-------"; echo; command time -v "./%<"<CR>
 
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
