@@ -1,16 +1,20 @@
-# dotfiles
-Initialization of repo for config files.
+DotFiles for use across multiple systems.
 
-Included:
+Remove character '_' and replace with '.'
 
-	VIM:
+_bashrc
++ CPU load
++ Current Disk Load / Usage
++ Custom Colors
++ Prompt based on User / Connection Type
 
-		Plugins:
-
-		gmarik/Vundle
-
-		scrooloose/NERDTree
-
-		scrooloose/Syntastic
-
-		tpope/fugitive 
+_vimrc
++ VimPlug manager
++ vim_easy_align
++ vim_github_dashboard
++ utilisnips
++ vim-snippets
++ nerdtree
++ vim-fireplace
++ ycm-generator
++ vim-go
